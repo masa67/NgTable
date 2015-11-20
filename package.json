@@ -1,0 +1,24 @@
+{
+  "name": "ngdates",
+  "version": "1.0.0",
+  "description": "A study of Angular/Node date handling.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "",
+    "express": ""
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/masa67/NgDates.git"
+  },
+  "author": "MS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masa67/SimpleChat/issues"
+  },
+  "homepage": "https://github.com/masa67/NgDates"
+}
