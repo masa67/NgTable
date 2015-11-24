@@ -17,6 +17,7 @@ app.use('/', express.static(path.join(__dirname, '../client/views')));
 app.use('/css', express.static(path.join(__dirname, '../client/css')));
 app.use('/js', express.static(path.join(__dirname, '../client/js')));
 app.use('/vendor', express.static(path.join(__dirname, '../node_modules')));
+app.use('/ng-table', express.static(path.join(__dirname, '../ng-table')));
 
 app.use('/data', data);
 

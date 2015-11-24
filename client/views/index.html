@@ -5,12 +5,11 @@
         <base href="/">
         <title>NgTable</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ng-table/0.8.3/ng-table.min.css">
+        <link rel="stylesheet" href="/ng-table/dist/ng-table.min.css">
     </head>
     <body>
         <div ng-controller="EmployeeController">
             <table ng-table="tableParams" class="table table-striped" show-filter="true">
-                <tbody>
                 <tr ng-repeat="employee in $data">
                     <td data-title="'employee.firstname' | translate" filter="{'firstname' : 'text'}" sortable="'firstname'"><a ui-sref="employee.detail({id:employee.id})">{{employee.firstname}}</a></td>
                     <td data-title="'employee.lastname' | translate" filter="{lastname : 'text'}" sortable="'lastname'">{{employee.lastname}}</td>
@@ -18,14 +17,13 @@
                     <td data-title="'employee.phone-number' | translate" filter="{phone_number : 'text'}" sortable="'phone_number'">{{employee.phone_number}}</td>
                     <td data-title="'employee.birthdate' | translate" filter="{birthdate : 'text'}" sortable="'birthdate'">{{employee.birthdate}}</td>
                 </tr>
-                </tbody>
             </table>
         </div>
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-resource.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/angular-translate/2.8.1/angular-translate.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ng-table/0.8.3/ng-table.js"></script>
+        <script src="/ng-table/dist/ng-table.js"></script>
         <script src="/js/controllers/MainCtrl.js"></script>
         <script src="/js/factories/TableFactory.js"></script>
         <script src="/js/app.js"></script>
